@@ -8,5 +8,13 @@
         }
     ],
     "license": "MIT",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Samary\\Plan\\": ""
+        }
+    },
     "require": {}
 }
