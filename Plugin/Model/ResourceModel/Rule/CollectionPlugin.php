@@ -6,7 +6,7 @@
  * @descript:
  */
 
-namespace Kriyya\Gift\Plugin\Model\ResourceModel\Rule;
+namespace Samary\Gift\Plugin\Model\ResourceModel\Rule;
 
 use Magento\SalesRule\Model\ResourceModel\Rule\Collection;
 

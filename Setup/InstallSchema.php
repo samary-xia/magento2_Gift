@@ -5,7 +5,7 @@
  * @description
  */
 
-namespace Kriyya\Gift\Setup;
+namespace Samary\Gift\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;

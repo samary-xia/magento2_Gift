@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Kriyya\Gift\Model\Quote;
+namespace Samary\Gift\Model\Quote;
 
 class Discount extends \Magento\Quote\Model\Quote\Address\Total\AbstractTotal
 {
@@ -37,7 +37,7 @@ class Discount extends \Magento\Quote\Model\Quote\Address\Total\AbstractTotal
 	protected $_info;
 
 	/**
-	 * @var \Kriyya\Gift\Model\Validate
+	 * @var \Samary\Gift\Model\Validate
 	 */
 	protected $_validate;
 	/**
@@ -51,8 +51,8 @@ class Discount extends \Magento\Quote\Model\Quote\Address\Total\AbstractTotal
 		\Magento\Store\Model\StoreManagerInterface $storeManager,
 		\Magento\SalesRule\Model\Validator $validator,
 		\Magento\Framework\Pricing\PriceCurrencyInterface $priceCurrency,
-		\Kriyya\Gift\Model\Quote\Info $info,
-		\Kriyya\Gift\Model\Validate $validate
+		\Samary\Gift\Model\Quote\Info $info,
+		\Samary\Gift\Model\Validate $validate
 	) {
 		$this->setCode('discount');
 		$this->eventManager = $eventManager;

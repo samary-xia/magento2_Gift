@@ -6,12 +6,12 @@
  * @descript:
  */
 
-namespace Kriyya\Gidt\Model\ResourceModel\Rules;
+namespace Samary\Gidt\Model\ResourceModel\Rules;
 
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\VersionControl\Collection
 {
 	protected function _construct()
 	{
-		$this->_init(\Kriyya\Gift\Model\Rules::class, \Kriyya\Gift\Model\ResourceModel\Rules::class);
+		$this->_init(\Samary\Gift\Model\Rules::class, \Samary\Gift\Model\ResourceModel\Rules::class);
 	}
 }

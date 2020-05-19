@@ -6,14 +6,14 @@
  * @descript:   重写购物车规则Save
  */
 
-namespace Kriyya\Gift\Plugin\Controller\Adminhtml\Promo\Quote;
+namespace Samary\Gift\Plugin\Controller\Adminhtml\Promo\Quote;
 
 use Magento\SalesRule\Controller\Adminhtml\Promo\Quote\Save;
 
 class SavePlugin extends Save {
 
 	/**
-	 * @var \Kriyya\Gift\Model\Rules
+	 * @var \Samary\Gift\Model\Rules
 	 */
 	protected $_giftRule;
 
@@ -24,7 +24,7 @@ class SavePlugin extends Save {
 	 * @param \Magento\Framework\Registry $coreRegistry
 	 * @param \Magento\Framework\App\Response\Http\FileFactory $fileFactory
 	 * @param \Magento\Framework\Stdlib\DateTime\Filter\Date $dateFilter
-	 * @param \Kriyya\Gift\Model\Rules $rules
+	 * @param \Samary\Gift\Model\Rules $rules
 	 */
 	public function __construct
 	(
@@ -32,7 +32,7 @@ class SavePlugin extends Save {
 		\Magento\Framework\Registry $coreRegistry,
 		\Magento\Framework\App\Response\Http\FileFactory $fileFactory,
 		\Magento\Framework\Stdlib\DateTime\Filter\Date $dateFilter,
-		\Kriyya\Gift\Model\Rules $rules
+		\Samary\Gift\Model\Rules $rules
 	) {
 		$this->_giftRule = $rules;
 		parent::__construct( $context, $coreRegistry, $fileFactory, $dateFilter );

@@ -6,7 +6,7 @@
  * @descript:   将产品加入购物车
  */
 
-namespace Kriyya\Gift\Model;
+namespace Samary\Gift\Model;
 
 use Magento\{
 	Framework\App\Helper\Context,

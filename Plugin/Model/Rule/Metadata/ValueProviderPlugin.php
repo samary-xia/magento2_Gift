@@ -6,7 +6,7 @@
  * @descript:   为后台购物车规则增加礼品规则
  */
 
-namespace Kriyya\Gift\Plugin\Model\Rule\Metadata;
+namespace Samary\Gift\Plugin\Model\Rule\Metadata;
 
 use Magento\SalesRule\Model\Rule\Metadata\ValueProvider;
 

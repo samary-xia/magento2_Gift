@@ -6,25 +6,25 @@
  * @descript:   重写购物车规则删除方法
  */
 
-namespace Kriyya\Gift\Plugin\Controller\Adminhtml\Promo\Quote;
+namespace Samary\Gift\Plugin\Controller\Adminhtml\Promo\Quote;
 
 use Magento\SalesRule\Controller\Adminhtml\Promo\Quote\Delete;
 
 class DeletePlugin {
 
 	/**
-	 * @var \Kriyya\Gift\Model\Rules
+	 * @var \Samary\Gift\Model\Rules
 	 */
 	protected $_giftRules;
 
 	/**
 	 * DeletePlugin constructor.
 	 *
-	 * @param \Kriyya\Gift\Model\Rules $giftRules
+	 * @param \Samary\Gift\Model\Rules $giftRules
 	 */
 	public function __construct
 	(
-		\Kriyya\Gift\Model\Rules $giftRules
+		\Samary\Gift\Model\Rules $giftRules
 	) {
 		$this->_giftRules = $giftRules;
 	}

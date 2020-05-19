@@ -6,16 +6,16 @@
  * @descript:
  */
 
-namespace Kriyya\Gift\Model\Rule\Action\Discount;
+namespace Samary\Gift\Model\Rule\Action\Discount;
 
 use Magento\Framework\App\ObjectManager;
-use Kriyya\Gift\Model\Quote\Info;
+use Samary\Gift\Model\Quote\Info;
 use Magento\Setup\Exception;
 
 class ByGift extends \Magento\SalesRule\Model\Rule\Action\Discount\AbstractDiscount {
 
 	/**
-	 * @var \Kriyya\Gift\Model\Rules
+	 * @var \Samary\Gift\Model\Rules
 	 */
 	protected $_giftRules;
 
@@ -29,8 +29,8 @@ class ByGift extends \Magento\SalesRule\Model\Rule\Action\Discount\AbstractDisco
 		\Magento\SalesRule\Model\Validator $validator,
 		\Magento\SalesRule\Model\Rule\Action\Discount\DataFactory $discountDataFactory,
 		\Magento\Framework\Pricing\PriceCurrencyInterface $priceCurrency,
-		\Kriyya\Gift\Model\Rules $giftRules,
-		\Kriyya\Gift\Model\Quote\Info $info
+		\Samary\Gift\Model\Rules $giftRules,
+		\Samary\Gift\Model\Quote\Info $info
 	) {
 		$this->_giftRules = $giftRules;
 		$this->_info      = $info;

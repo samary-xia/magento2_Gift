@@ -6,7 +6,7 @@
  * @descript:
  */
 
-namespace Kriyya\Gift\Model\Quote;
+namespace Samary\Gift\Model\Quote;
 
 class Info {
 	/**

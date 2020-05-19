@@ -6,7 +6,7 @@
  * @descript:
  */
 
-namespace Kriyya\Gift\Model\ResourceModel;
+namespace Samary\Gift\Model\ResourceModel;
 
 
 class Rules extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb

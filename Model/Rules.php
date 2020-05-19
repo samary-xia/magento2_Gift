@@ -6,12 +6,12 @@
  * @descript:
  */
 
-namespace Kriyya\Gift\Model;
+namespace Samary\Gift\Model;
 
 class Rules extends \Magento\Framework\Model\AbstractModel {
 
 	protected function _construct() {
-		$this->_init( 'Kriyya\Gift\Model\ResourceModel\Rules' );
+		$this->_init( 'Samary\Gift\Model\ResourceModel\Rules' );
 	}
 
 

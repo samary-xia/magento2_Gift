@@ -7,10 +7,10 @@
  */
 
 
-namespace Kriyya\Gift\Model;
+namespace Samary\Gift\Model;
 
 use Magento\{Checkout\Model\Session, Setup\Exception};
-use Kriyya\Gift\{
+use Samary\Gift\{
 	Model\Gift
 };
 
@@ -22,7 +22,7 @@ class Validate {
 	protected $_quote;
 
 	/**
-	 * @var \Kriyya\Gift\Model\Gift
+	 * @var \Samary\Gift\Model\Gift
 	 */
 	protected $_gift;
 
@@ -31,14 +31,14 @@ class Validate {
 	/**
 	 * Validate constructor.
 	 *
-	 * @param \Kriyya\Gift\Model\Gift $gift
+	 * @param \Samary\Gift\Model\Gift $gift
 	 * @param Session $quote
 	 */
 	public function __construct
 	(
 		Gift $gift,
 		Session $quote,
-		\Kriyya\CustomLog\Logger\Gift\ErrorLogger $errorLogger
+		\Samary\CustomLog\Logger\Gift\ErrorLogger $errorLogger
 	) {
 		$this->_gift     = $gift;
 		$this->_quote    = $quote;

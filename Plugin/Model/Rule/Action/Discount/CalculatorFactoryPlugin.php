@@ -6,7 +6,7 @@
  * @descript:   增加礼品类
  */
 
-namespace Kriyya\Gift\Plugin\Model\Rule\Action\Discount;
+namespace Samary\Gift\Plugin\Model\Rule\Action\Discount;
 
 use Magento\SalesRule\Model\Rule\Action\Discount\CalculatorFactory;
 
@@ -16,7 +16,7 @@ class CalculatorFactoryPlugin extends CalculatorFactory
 	 * @var array
 	 */
 	protected $customClassByType = [
-		'by_gift' => \Kriyya\Gift\Model\Rule\Action\Discount\ByGift::class
+		'by_gift' => \Samary\Gift\Model\Rule\Action\Discount\ByGift::class
 	];
 
 	public function beforeCreate( CalculatorFactory $subject ) {

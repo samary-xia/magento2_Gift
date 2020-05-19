@@ -6,6 +6,6 @@
  */
 \Magento\Framework\Component\ComponentRegistrar::register(
 	\Magento\Framework\Component\ComponentRegistrar::MODULE,
-	'Kriyya_Gift',
+	'Samary_Gift',
 	__DIR__
 );

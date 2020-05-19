@@ -7,23 +7,23 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Magento\SalesRule\Model\Quote\Discount" type="Kriyya\Gift\Model\Quote\Discount" />
+    <preference for="Magento\SalesRule\Model\Quote\Discount" type="Samary\Gift\Model\Quote\Discount" />
     <type name="Magento\SalesRule\Model\Rule\Metadata\ValueProvider">
-        <plugin name="cart_prices_rule_metadata_value_provider" type="Kriyya\Gift\Plugin\Model\Rule\Metadata\ValueProviderPlugin" sortOrder="10"/>
+        <plugin name="cart_prices_rule_metadata_value_provider" type="Samary\Gift\Plugin\Model\Rule\Metadata\ValueProviderPlugin" sortOrder="10"/>
     </type>
     <type name="Magento\SalesRule\Model\Rule\Action\Discount\CalculatorFactory">
-        <plugin name="cart_prices_rule_calculator_factory" type="Kriyya\Gift\Plugin\Model\Rule\Action\Discount\CalculatorFactoryPlugin"/>
+        <plugin name="cart_prices_rule_calculator_factory" type="Samary\Gift\Plugin\Model\Rule\Action\Discount\CalculatorFactoryPlugin"/>
     </type>
     <!-- 重写后台购物车规则保存方法 -->
     <type name="Magento\SalesRule\Controller\Adminhtml\Promo\Quote\Save">
-        <plugin name="gift_salesrule_admin_promo_quote_save" type="Kriyya\Gift\Plugin\Controller\Adminhtml\Promo\Quote\SavePlugin"  sortOrder="10"/>
+        <plugin name="gift_salesrule_admin_promo_quote_save" type="Samary\Gift\Plugin\Controller\Adminhtml\Promo\Quote\SavePlugin"  sortOrder="10"/>
     </type>
     <!-- 重写购物车规则数据获取方法 -->
     <type name="Magento\SalesRule\Model\ResourceModel\Rule\Collection">
-        <plugin name="git_salesrule_model_rule_collection" type="Kriyya\Gift\Plugin\Model\ResourceModel\Rule\CollectionPlugin" sortOrder="10"/>
+        <plugin name="git_salesrule_model_rule_collection" type="Samary\Gift\Plugin\Model\ResourceModel\Rule\CollectionPlugin" sortOrder="10"/>
     </type>
     <!-- 重写购物车规则数据删除方法 -->
     <type name="Magento\SalesRule\Controller\Adminhtml\Promo\Quote\Delete">
-        <plugin name="gift_salesrule_admin_promo_quote_delete" type="Kriyya\Gift\Plugin\Controller\Adminhtml\Promo\Quote\DeletePlugin" sortOrder="10"/>
+        <plugin name="gift_salesrule_admin_promo_quote_delete" type="Samary\Gift\Plugin\Controller\Adminhtml\Promo\Quote\DeletePlugin" sortOrder="10"/>
     </type>
 </config>
