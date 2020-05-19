@@ -1,0 +1,11 @@
+{
+    "name": "samary/gift",
+    "description": "magento2 gift plugin",
+    "authors": [
+        {
+            "name": "samary",
+            "email": "samary.xia@gmail.com"
+        }
+    ],
+    "require": {}
+}
